@@ -1,0 +1,19 @@
+{
+  //命名空间
+  "defaultAssembly": "WebApplicationApi",
+  //组件
+  "components": [
+    {
+      //需要做的具体实现 ',' 后面为程序集 名称
+      "type": "WebApplicationApi.Service.ITest,WebApplicationApi",
+      "services": [
+        {
+          //抽象 ',' 后面为程序集名称
+          "type": "WebApplicationApi.IService.ITestA,WebApplicationApi"
+        }
+      ],
+      "instanceScope": "single-instance", //生命周期 (单例)
+      "injectProperties": true //属性注入
+    }
+  ]
+}
